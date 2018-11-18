@@ -98,5 +98,16 @@ tape('[BoundProtocol]', t => {
     t.end()
   })
 
+  t.test('should timeout request', async (t) => {
+    const sender = td.object('Sender')
+    const bound = new BoundProtocol({ protocol, peer, sender })
+    try {
+      await bound.testMessage(1)
+    } catch (err) {
+      t.ok(/timed out/.test(err.message), 'got error')
+    }
+    t.end()
+  })
+
   td.reset()
 })
