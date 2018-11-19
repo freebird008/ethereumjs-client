@@ -1,6 +1,6 @@
 const tape = require('tape-catch')
 const td = require('testdouble')
-const LesProtocol = require('../../../lib/net/protocol/lesprotocol')
+const { LesProtocol } = require('../../../lib/net/protocol')
 const BN = require('bn.js')
 
 tape('[LesProtocol]', t => {

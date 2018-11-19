@@ -1,5 +1,5 @@
 const tape = require('tape-catch')
-const Sender = require('../../../lib/net/protocol/sender')
+const { Sender } = require('../../../lib/net/protocol')
 
 tape('[Sender]', t => {
   t.test('should get/set status', t => {

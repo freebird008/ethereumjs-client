@@ -1,7 +1,7 @@
 const tape = require('tape-catch')
 const pull = require('pull-stream')
 const DuplexPair = require('pull-pair/duplex')
-const Libp2pSender = require('../../../lib/net/protocol/libp2psender')
+const { Libp2pSender } = require('../../../lib/net/protocol')
 
 tape('[Libp2pSender]', t => {
   t.test('should send/receive status', t => {

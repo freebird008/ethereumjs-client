@@ -1,8 +1,7 @@
 const tape = require('tape-catch')
 const td = require('testdouble')
-const EthProtocol = require('../../../lib/net/protocol/ethprotocol')
+const { EthProtocol } = require('../../../lib/net/protocol')
 const BN = require('bn.js')
-const rlp = require('rlp')
 
 tape('[EthProtocol]', t => {
   const Chain = td.replace('../../../lib/blockchain/chain')

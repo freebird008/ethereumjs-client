@@ -1,7 +1,7 @@
 const tape = require('tape-catch')
 const td = require('testdouble')
 const timers = require('testdouble-timers').default
-const FlowControl = require('../../../lib/net/protocol/flowcontrol')
+const { FlowControl } = require('../../../lib/net/protocol')
 
 timers.use(td)
 

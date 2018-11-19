@@ -1,6 +1,6 @@
 const tape = require('tape-catch')
 const td = require('testdouble')
-const RlpxSender = require('../../../lib/net/protocol/rlpxsender')
+const { RlpxSender } = require('../../../lib/net/protocol')
 const EventEmitter = require('events')
 const rlp = require('rlp')
 
